@@ -1,0 +1,8 @@
+body {
+  background: url(./images/bg-intro-desktop.png);
+  background-color: rgb(253, 121, 120);
+}
+
+.container {
+  display: block;
+}
