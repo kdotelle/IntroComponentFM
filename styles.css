@@ -6,10 +6,15 @@ body {
 .container {
   justify-content: space-around;
   align-items: center;
-  align-content: center;
 }
 
-#intro {
-  grid-column: 3 / span 2;
-  grid-row: third-line / 4;
+.btn-purple {
+  background-color: rgb(94, 85, 163);
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 3px 4px 9px -1px #000;
+}
+
+form {
+  margin-top: 10px;
 }
