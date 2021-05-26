@@ -1,20 +1,30 @@
-const firstName = document.getElementById("firstName");
-const lastName = document.getElementById("lastName");
-const email = document.getElementById("email");
-const password = document.getElementById("password");
-const password = document.getElementById("button");
+const submitButton = document.getElementById("button");
 
 function validateForm(e) {
   e.preventDefault();
 
-  let valid = true;
-  if (!firstName.value) {
-    const error = document.getElementById("error");
-    firstName.classList.add("invalid");
-    error.classList.add("visible");
-    error.setAttribute("aria-hidden", false);
-    error.setAttribute("aria-invalid", true);
-  }
+  const firstName = document.getElementById("firstName");
+  const lastName = document.getElementById("lastName");
+  const email = document.getElementById("email");
+  const password = document.getElementById("password");
 
-  return valid;
+  if (!firstName.value) {
+    firstName.focus();
+    return false;
+  }
+  if (!lastName.value) {
+    lastName.focus();
+    return false;
+  }
+  if (!email.value) {
+    email.focus();
+    return false;
+  }
+  if (!password.value) {
+    password.focus();
+    return false;
+  }
+  return true;
 }
+
+submitButton.addEventListener("click", validateForm);

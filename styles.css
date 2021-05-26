@@ -57,15 +57,6 @@ p b {
   color: red;
 }
 
-#error {
-  display: none;
-  font-size: 0.8em;
-}
-
-#error.visible {
-  display: block;
-}
-
-input.invalid {
+input:focus {
   border-color: red;
 }
