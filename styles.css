@@ -5,7 +5,13 @@ body {
 
 .container {
   justify-content: space-around;
+}
+
+.row {
+  justify-content: center;
   align-items: center;
+  margin: 200px auto;
+  padding: 0px 50px;
 }
 
 .btn-purple {
@@ -13,8 +19,20 @@ body {
   color: #fff;
   font-size: 16px;
   box-shadow: 3px 4px 9px -1px #000;
+  padding: 11px 74px;
 }
 
 form {
   margin-top: 10px;
+  background-color: #fff;
+  border-radius: 18px;
+  padding: 50px;
+}
+
+#intro {
+  color: #fff;
+}
+
+h1 {
+  font-size: 75px;
 }
