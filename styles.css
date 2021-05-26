@@ -60,3 +60,7 @@ p b {
 input:focus {
   border-color: red;
 }
+
+button span {
+  font-size: 10px;
+}
